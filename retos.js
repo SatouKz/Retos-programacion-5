@@ -111,9 +111,9 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  if (arguments === 0) {
+  if(arguments.length === 0) {
     return 0;
-  } else {
+  }else {
     const array = [];
     for (let i = 0; i < arguments.length; i++) {
       array.push(arguments[i]);
@@ -146,10 +146,10 @@ function diaDeLaSemana(numeroDeDia) {
   //     return "Es fin de semana";
   // }
   //Usando if
-  if (numeroDeDia === 1 || numeroDeDia === 7) {
-    return "Es fin de semana";
-  } else {
-    return "Es dia laboral";
+  if(numeroDeDia === 1 || numeroDeDia === 7) {
+    return 'Es fin de semana'
+  }else {
+    return 'Es dia Laboral'
   }
 }
 
@@ -201,7 +201,7 @@ function breakStatement(numero) {
   }
   const array = [];
   let bandera = false;
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (numero + 2 === i) {
       bandera = true;
       break;
@@ -221,7 +221,7 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   const array = [];
-  for (let i = 0; i <= 10; i++) {
+  for (let i = 1; i <= 10; i++) {
     if (i === 5) {
       continue;
     } else {
@@ -229,6 +229,7 @@ function continueStatement(numero) {
       array.push(numero);
     }
   }
+  return array;
 }
 
 // No modificar nada debajo de esta línea
